@@ -11,7 +11,7 @@
         @url = url
       end
 
-    def inilialize 
+    def init
         get_requester = GetRequester.new(URL)
     end
 
@@ -24,4 +24,5 @@
     def parse_json
       request = JSON.parse(self.get_response_body)
     end
+    
 end
